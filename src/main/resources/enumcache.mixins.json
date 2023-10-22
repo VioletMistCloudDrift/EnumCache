@@ -16,11 +16,17 @@
     "mc.common.MixinBossEvent$BossBarOverlay",
     "mc.common.MixinChatType",
     "mc.common.MixinClientboundPlayerPositionPacket$RelativeArgument",
+    "mc.common.MixinCommandBlockEntity$Mode",
     "mc.common.MixinCopyNameFunction$NameSource",
     "mc.common.MixinCopyNbtFunction$MergeStrategy",
+    "mc.common.MixinDensityFunctions$Mapped$Type",
+    "mc.common.MixinDensityFunctions$Marker$Type",
+    "mc.common.MixinDensityFunctions$TwoArgumentSimpleFunction$Type",
     "mc.common.MixinDifficulty",
     "mc.common.MixinDirection",
     "mc.common.MixinDirection$Axis",
+    "mc.common.MixinDirection8",
+    "mc.common.MixinDripstoneThickness",
     "mc.common.MixinDyeColor",
     "mc.common.MixinEquipmentSlot",
     "mc.common.MixinFrameType",
@@ -36,6 +42,7 @@
     "mc.common.MixinMapDecoration$Type",
     "mc.common.MixinMarkings",
     "mc.common.MixinMineshaftFeature$Type",
+    "mc.common.MixinMirror",
     "mc.common.MixinMobCategory",
     "mc.common.MixinMushroomCow$MushroomType",
     "mc.common.MixinObjectiveCriteria$RenderType",
@@ -49,16 +56,19 @@
     "mc.common.MixinVariant"
   ],
   "client": [
+    "forge.client.MixinAdvancementTabType",
     "forge.client.MixinModListScreen$SortType",
     "mc.client.MixinBlockModel$GuiLight",
     "mc.client.MixinInputConstants$Type",
     "mc.client.MixinItemTransforms$TransformType",
+    "mc.client.MixinLevelType",
     "mc.client.MixinPing$Region",
     "mc.client.MixinPlayerModelPart",
     "mc.client.MixinRealmsDataFetcher$Task",
     "mc.client.MixinServerData$ServerPackStatus",
     "mc.client.MixinSound$Type",
-    "mc.client.MixinTutorialSteps"
+    "mc.client.MixinTutorialSteps",
+    "mc.client.MixinUnit"
   ],
   "injectors": {
     "defaultRequire": 1
