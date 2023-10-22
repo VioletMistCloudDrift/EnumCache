@@ -1,7 +1,7 @@
 package neko.violetmist.enumcache.mixin.mc.client;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraft.entity.player.PlayerModelPart;
+import net.minecraft.world.entity.player.PlayerModelPart;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,7 +1,7 @@
 package neko.violetmist.enumcache.mixin.mc.common;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraft.world.TickPriority;
+import net.minecraft.world.ticks.TickPriority;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

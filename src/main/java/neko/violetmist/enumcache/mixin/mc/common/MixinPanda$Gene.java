@@ -1,17 +1,17 @@
 package neko.violetmist.enumcache.mixin.mc.common;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraft.world.BossInfo;
+import net.minecraft.world.entity.animal.Panda;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(BossInfo.Color.class)
-public abstract class MixinBossInfo$Color implements ICacheableEnum {
+@Mixin(Panda.Gene.class)
+public abstract class MixinPanda$Gene implements ICacheableEnum {
     @Unique
-    private static BossInfo.Color[] enumCache$cache = null;
+    private static Panda.Gene[] enumCache$cache = null;
 
     @Override
     public void enumCache$clearValuesCache() {
@@ -19,12 +19,12 @@ public abstract class MixinBossInfo$Color implements ICacheableEnum {
     }
 
     @Inject(method = "values", at = @At("HEAD"), cancellable = true)
-    private static void enumCache$inject$values$head(CallbackInfoReturnable<BossInfo.Color[]> cir) {
+    private static void enumCache$inject$values$head(CallbackInfoReturnable<Panda.Gene[]> cir) {
         if (enumCache$cache != null) cir.setReturnValue(enumCache$cache);
     }
 
     @Inject(method = "values", at = @At("RETURN"))
-    private static void enumCache$inject$values$tail(CallbackInfoReturnable<BossInfo.Color[]> cir) {
+    private static void enumCache$inject$values$tail(CallbackInfoReturnable<Panda.Gene[]> cir) {
         if (enumCache$cache == null) enumCache$cache = cir.getReturnValue();
     }
 }

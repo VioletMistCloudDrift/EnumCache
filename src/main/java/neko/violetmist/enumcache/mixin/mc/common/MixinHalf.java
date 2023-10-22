@@ -1,7 +1,7 @@
 package neko.violetmist.enumcache.mixin.mc.common;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraft.state.properties.Half;
+import net.minecraft.world.level.block.state.properties.Half;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

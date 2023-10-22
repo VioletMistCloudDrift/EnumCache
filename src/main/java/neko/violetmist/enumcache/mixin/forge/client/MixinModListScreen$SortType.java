@@ -1,7 +1,7 @@
 package neko.violetmist.enumcache.mixin.forge.client;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraftforge.fml.client.gui.screen.ModListScreen;
+import net.minecraftforge.client.gui.ModListScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,17 +1,17 @@
 package neko.violetmist.enumcache.mixin.mc.common;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraft.item.crafting.RecipeBookCategory;
+import net.minecraft.world.entity.MobCategory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(RecipeBookCategory.class)
-public abstract class MixinRecipeBookCategory implements ICacheableEnum {
+@Mixin(MobCategory.class)
+public abstract class MixinMobCategory implements ICacheableEnum {
     @Unique
-    private static RecipeBookCategory[] enumCache$cache = null;
+    private static MobCategory[] enumCache$cache = null;
 
     @Override
     public void enumCache$clearValuesCache() {
@@ -19,12 +19,12 @@ public abstract class MixinRecipeBookCategory implements ICacheableEnum {
     }
 
     @Inject(method = "values", at = @At("HEAD"), cancellable = true)
-    private static void enumCache$inject$values$head(CallbackInfoReturnable<RecipeBookCategory[]> cir) {
+    private static void enumCache$inject$values$head(CallbackInfoReturnable<MobCategory[]> cir) {
         if (enumCache$cache != null) cir.setReturnValue(enumCache$cache);
     }
 
     @Inject(method = "values", at = @At("RETURN"))
-    private static void enumCache$inject$values$tail(CallbackInfoReturnable<RecipeBookCategory[]> cir) {
+    private static void enumCache$inject$values$tail(CallbackInfoReturnable<MobCategory[]> cir) {
         if (enumCache$cache == null) enumCache$cache = cir.getReturnValue();
     }
 }

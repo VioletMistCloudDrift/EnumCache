@@ -1,7 +1,7 @@
 package neko.violetmist.enumcache.mixin.forge.common;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraftforge.fml.network.NetworkDirection;
+import net.minecraftforge.network.NetworkDirection;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

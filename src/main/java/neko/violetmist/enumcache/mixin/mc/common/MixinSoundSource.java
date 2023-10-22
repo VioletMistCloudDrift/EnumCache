@@ -1,17 +1,17 @@
 package neko.violetmist.enumcache.mixin.mc.common;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
-import net.minecraft.world.gen.Heightmap;
+import net.minecraft.sounds.SoundSource;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(Heightmap.Type.class)
-public abstract class MixinHeightMap$Type implements ICacheableEnum {
+@Mixin(SoundSource.class)
+public abstract class MixinSoundSource implements ICacheableEnum {
     @Unique
-    private static Heightmap.Type[] enumCache$cache = null;
+    private static SoundSource[] enumCache$cache = null;
 
     @Override
     public void enumCache$clearValuesCache() {
@@ -19,12 +19,12 @@ public abstract class MixinHeightMap$Type implements ICacheableEnum {
     }
 
     @Inject(method = "values", at = @At("HEAD"), cancellable = true)
-    private static void enumCache$inject$values$head(CallbackInfoReturnable<Heightmap.Type[]> cir) {
+    private static void enumCache$inject$values$head(CallbackInfoReturnable<SoundSource[]> cir) {
         if (enumCache$cache != null) cir.setReturnValue(enumCache$cache);
     }
 
     @Inject(method = "values", at = @At("RETURN"))
-    private static void enumCache$inject$values$tail(CallbackInfoReturnable<Heightmap.Type[]> cir) {
+    private static void enumCache$inject$values$tail(CallbackInfoReturnable<SoundSource[]> cir) {
         if (enumCache$cache == null) enumCache$cache = cir.getReturnValue();
     }
 }
