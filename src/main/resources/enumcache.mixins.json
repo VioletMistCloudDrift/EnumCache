@@ -51,7 +51,6 @@
     "mc.common.MixinTickPriority"
   ],
   "client": [
-    "forge.client.MixinModListScreen$SortType",
     "mc.client.MixinAdvancementTabType",
     "mc.client.MixinBlockModel$GuiLight",
     "mc.client.MixinInputMappings$Type",
