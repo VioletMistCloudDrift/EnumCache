@@ -1,4 +1,4 @@
-package neko.violetmist.enumcache.mixin.forge.client;
+package neko.violetmist.enumcache.mixin.mc.client;
 
 import neko.violetmist.enumcache.api.ICacheableEnum;
 import net.minecraft.client.gui.screens.advancements.AdvancementTabType;

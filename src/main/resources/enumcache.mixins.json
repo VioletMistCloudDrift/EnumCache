@@ -56,8 +56,7 @@
     "mc.common.MixinVariant"
   ],
   "client": [
-    "forge.client.MixinAdvancementTabType",
-    "forge.client.MixinModListScreen$SortType",
+    "mc.client.MixinAdvancementTabType",
     "mc.client.MixinBlockModel$GuiLight",
     "mc.client.MixinInputConstants$Type",
     "mc.client.MixinItemTransforms$TransformType",
