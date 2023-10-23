@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "neko.violetmist.enumcache.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_17",
   "refmap": "enumcache.refmap.json",
   "mixins": [
     "forge.common.MixinBiomeManager$BiomeType",
