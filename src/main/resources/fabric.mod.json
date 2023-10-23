@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "enumcache",
+  "version": "${version}",
+  "name": "EnumCache",
+  "description": "Caches Enum#values for some minecraft-related enum classes to save your RAM",
+  "authors": [
+    "VioletMistCloudDrift"
+  ],
+  "contact": {
+    "repo": "https://github.com/VioletMistCloudDrift/EnumCache"
+  },
+  "license": "Nova-Relay-License-1.0",
+  "environment": "*",
+  "mixins": [
+    "enumcache.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*"
+  },
+  "accessWidener": "enumcache.accesswidener"
+}
