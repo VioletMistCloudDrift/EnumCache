@@ -50,6 +50,7 @@
     "mc.common.MixinRecipeBookType",
     "mc.common.MixinRotation",
     "mc.common.MixinSoundSource",
+    "mc.common.MixinSpellcasterIllager$IllagerSpell",
     "mc.common.MixinSupportType",
     "mc.common.MixinTextFormatting",
     "mc.common.MixinTickPriority",
